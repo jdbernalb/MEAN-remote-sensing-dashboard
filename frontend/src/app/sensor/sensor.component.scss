@@ -1,0 +1,47 @@
+.resume {
+    margin: 50px;
+    width: 30px 0;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.14);
+    border-radius: 3px;
+    .icon{
+    float:left;
+    text-align: center;
+    color: #ffffff;
+    margin: -40px 15px 0;
+    border-radius:  3px;
+    padding: 15px;
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+    box-shadow: 0px 12px 20px -10px rgba(76,175,80,0.28), 0px 4px 20px 0px rgba(0,0,0,0.12), 0px 7px 8px -5px rgba(76,175,80,0.2);
+    .p{
+        width: 56px;
+        height: 56px;
+    }
+
+
+}
+    .content{
+    text-align: right;
+    padding-top: 10px;
+    padding: 15px 20px;
+    .category{
+    color: #999999;
+}
+}
+.footer{
+    margin: 0 20px 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eeeeee;
+    .stats{
+    line-height: 22px;
+    color: #999999;
+    font-size: 14px;
+    display: inline-block;
+
+}
+}
+
+
+}
+

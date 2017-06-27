@@ -1,0 +1,18 @@
+ <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<app-sensor [label]="'Temperatura'" [type]="'°C'" [last]="Temp" [Promedio]="avgTemp" [Max]="maxTemp" [Min]="minTemp"></app-sensor>
+<app-sensor [label]="'Humedad'" [type]="'%'" [last]="Hum" [Promedio]="avgHum" [Max]="maxHum" [Min]="minHum"></app-sensor>
+<app-sensor [label]="'Presión'" [type]="'Pa'" [last]="Pres" [Promedio]="avgPres" [Max]="maxPres" [Min]="minPres"></app-sensor>
+<app-sensor [label]="'Humedad Suelo'" [type]="'%'" [last]="HumT" [Promedio]="avgHumT" [Max]="maxHumT" [Min]="minHumT"></app-sensor>
+<div class="date">
+    <h1> Seleccione una fecha a continuación para ver los historicos: </h1>
+   
+<ng-daterangepicker [(ngModel)]="value" [options]="options"></ng-daterangepicker>
+<div class="row">
+     <a md-fab [routerLink]="['/nodes',value]"><md-icon>check</md-icon></a>
+</div>
+</div>
+
+<h1>Fecha Seleccionada: {{value}}</h1>
+

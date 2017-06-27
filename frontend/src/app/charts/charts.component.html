@@ -1,0 +1,63 @@
+
+  <div class="app-content">
+    <div class="row">
+      <div class="card">
+        <md-card>
+          <h4> Temperatura </h4>
+                <canvas baseChart
+                [data]="lineChartDatat"
+                [colors]="colorblue"
+                [labels]="lineChartLabelst"
+                [options]="lineChartOptiont"
+                [chartType]="lineChartType"
+                [legend]="false"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+        </md-card>
+              </div>
+      <div class="card">
+        <md-card>
+          <h4> Humedad </h4>
+                <canvas baseChart
+                [data]="lineChartDatah"
+                [colors]="colorgreen"
+                [labels]="lineChartLabelsh"
+                [options]="lineChartOptionh"
+                [chartType]="lineChartType"
+                [legend]="false"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+        </md-card>
+      </div>
+        </div>
+      <div class="row">
+      <div class="card">
+        <md-card>
+          <h4> Humedad Suelo</h4>
+                <canvas baseChart
+                [data]="lineChartDatas"
+                [colors]="colororange"
+                [labels]="lineChartLabelss"
+                [options]="lineChartOptions"
+                [chartType]="lineChartType"
+                [legend]="false"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+        </md-card>
+              </div>
+      <div class="card">
+        <md-card>
+          <h4>Presión </h4>
+                 <canvas baseChart
+                [data]="lineChartDatap"
+                [colors]="colorred"
+                [labels]="lineChartLabelsp"
+                [options]="lineChartOptionp"
+                [chartType]="lineChartType"
+                [legend]="false"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+        </md-card>
+      </div>      
+    </div>
+  </div>

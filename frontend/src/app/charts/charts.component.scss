@@ -1,0 +1,28 @@
+
+.app-content {
+
+  padding: 8px 32px 8px 40px;
+
+}
+
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+}
+
+.card{
+    margin: 0;
+    width: 50%;
+    padding: 50px;
+}
+
+.md-card {
+    margin: 100px;
+    padding: 100px;
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.14);
+    border-radius: 6px;
+}
